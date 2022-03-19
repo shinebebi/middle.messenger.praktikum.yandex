@@ -2,8 +2,8 @@
   "name": "messenger",
   "version": "1.0.0",
   "scripts": {
-    "dev": "npx parcel ./src/index.hbs",
-    "build": "npx parcel build ./src/index.hbs",
+    "dev": "npx parcel ./src/index.hbs --no-cache",
+    "build": "npx parcel build ./src/index.hbs --no-cache",
     "start": "node ./server.js"
   },
   "keywords": [],
