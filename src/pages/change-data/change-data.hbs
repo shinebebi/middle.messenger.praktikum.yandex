@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../profile/profile.css">
+    <title>EDIT PROFILE</title>
+</head>
+<body class="main">
+{{#> profile-layout}}
+    {{#*inline "form"}}
+        <form class="info-container">
+            {{> change-info title="Почта" value="pochta@yandex.ru"}}
+            {{> change-info title="Логин" value="ivanivanov"}}
+            {{> change-info title="Имя" value="Ivan"}}
+            {{> change-info title="Фамилия" value="Иванов"}}
+            {{> change-info title="Имя в чате" value="Иван"}}
+            {{> change-info title="Телефон" value="+7 (909) 967 30 30"}}
+            {{> btn text="Save"}}
+        </form>
+    {{/inline}}
+{{/profile-layout}}
+</body>
+</html>

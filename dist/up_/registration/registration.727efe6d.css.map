@@ -1,0 +1,1 @@
+{"mappings":"AAEA,eACI,eACJ","sources":["src/pages/registration/registration.css"],"sourcesContent":["@import url(../login/login.css);\n\n.btn_container {\n    margin-top: 60px;\n}"],"names":[],"version":3,"file":"registration.727efe6d.css.map"}

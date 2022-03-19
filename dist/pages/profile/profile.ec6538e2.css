@@ -1,0 +1,113 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    font-family: Inter, sans-serif;
+}
+
+.nav-btn__container {
+    width: 64px;
+    height: auto;
+    display: flex;
+    background-color: #FBFBFB;
+    border-right: #EAEAEA;
+}
+
+.nav-btn__img {
+    height: 100%;
+    width: 100%;
+}
+
+.nav-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 100px;
+    margin: auto;
+}
+
+.profile__container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    gap: 60px;
+    width: 510px;
+}
+
+.main-info__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    width: 130px;
+    margin: auto;
+}
+
+.img {
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 510px;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: row;
+    width: 510px;
+    font-size: 13px;
+    line-height: 13px;
+    border-bottom: 1px solid #EAEAEA;
+    justify-content: space-between;
+}
+
+.field-name {
+    font-weight: 500;
+}
+
+.person-info {
+    color: #999999;
+    background-color: white;
+    height: 13px;
+    border: none;
+    margin: auto 0;
+}
+
+.btn__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #3369F3;
+}
+.btn {
+    border: none;
+    border-bottom: 1px solid #EAEAEA;
+    text-align: start;
+    background-color: white;
+}
+
+.btn_auth {
+    width: 280px;
+    height: 37px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #3369F3;
+}
+.link {
+    text-decoration: none;
+    text-underline: none;
+    color: #FF0000;
+}
+/*# sourceMappingURL=profile.ec6538e2.css.map */

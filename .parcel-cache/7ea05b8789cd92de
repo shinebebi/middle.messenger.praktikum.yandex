@@ -1,0 +1,24 @@
+---
+title: Вход
+stylesheets:
+- ./login.css
+---
+{{#> page}}
+{{/page}}
+
+<div class ="login-page" >
+    {{#> overlay title="Вход"}}
+        {{#*inline "form"}}
+            <div class="inputs_container" id="output">
+                {{> input name="login"}}
+                {{> input name="password"}}
+            </div>
+            <div class="btn_container">
+                {{> btn text="Sign In"}}
+                <button class="btn_sign-up">
+                    <a href="registration.html" class="link">Sign Up</a>
+                </button>
+            </div>
+        {{/inline}}
+    {{/overlay}}
+</div>
