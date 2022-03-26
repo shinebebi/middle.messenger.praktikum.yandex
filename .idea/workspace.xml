@@ -2,133 +2,359 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0232ced8-0cd3-4b25-9a06-e9c630847e0f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/tests.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/messenger.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nvmrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/00e1ee9f80ed1358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/0843fe01fd13d54b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/0850789ca9c044b4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/0ce9074b13e2c03c.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/15a771483a03e0a9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/162c0350124e06d6" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/1ad64c72f2ed2644" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/1bb5ee282de0b7b1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/20a0009c21d30c87" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/22ea9cd83327c1a8" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/23c83626aa89fcef" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/27a4107338faae5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/284e6f6d0fa5d04a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/2f2bd138e9cc814b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/2fc3881870e9181d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/309f5b9650138deb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/3cfbb337e71405f1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/3de636e7958a951a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/3e0fe7ed66580725" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/3e7f594bf1e72722" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/411cad3b92e8a92d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/415356884032bcd1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/4318de8f277c6081" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/490413c06b8608c8" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/4cc1845ac97f4218" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/4d25872a202025a0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/56da0a36ebe8880a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/636293eaad89690b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/64dfc3abf2413d17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/650b3f6018694ec5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/653f5d974338245e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/657e0bb8518cb2ef" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/67565456a9e5e0ff" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/6aeb14379d83fb94" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/6c4c27436c46dc44" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/6d1f2cc61dd916aa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/7103d06fb6748d3d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/7275965a38cc8821" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/73578543cbf4c305" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/73b59e41ad90a83b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/7a6c0208249c610f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/7c8f211341697479" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/7da306251606052a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/7ea05b8789cd92de" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/82a44dc993dd4bb1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/8a960ea2948536b8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/917048c09ecd69cb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/932ec4a64ef78c61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/93db0f1accecd99a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/95ab9e3d1dadf82e.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/96333ab60fb63cb0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/98a2f77c467bb5e1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/992c0d61a7e20df2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/998077dad8147189" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/9e6dbca7309537d2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/9f702ffee012f0cb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/a065dcc94f7647e0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/a39519cf176a72e1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/a4a76e4385167329" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/a4c8bde611e8002c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/a576adc1a5e72d5f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/a6dc1f1cecac63b9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/aa85f0a9412864f8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/ae047ff49b6dbcb3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/b157ca70f7307bbd.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/b3269517933f4a57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/b6da8d6ceff6d111.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/bc9ae64a50be3923" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/bdf0d4ee81b58d0d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/c3fdeb4e098d1c5f" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/c6830f6eb4f1d9ee" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/c931c6b85d08956f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/c978a928eee3a100" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/ca71453b67fbe438.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/cd22fa0440fb9192" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/d7033975a5bf5423" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/d9bdd7cbbfa308b4.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/data.mdb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/dde09145f7fc345e.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/e2315133246e6576.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/e2b3ccf27ce9e55b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/e4f59bfbbbb18bf4.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/e8416219aaf93bf9" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/ea5c70baa8d8c8dc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/eb8f0b4431a3ddd6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/ec906c2487ad2cde" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/ecd67da87b8f176d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/f2b507fe3c553069" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/f7dceb83dc725208" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/f7f9d07e94552dcd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/f9baa40db449c4d8" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/fcd2b53e2e3881d8" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/fe11aea682281bce" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/feded3fdce700285" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/lock.mdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/404.2dd402dc.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/404.2dd402dc.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/500.6a96ed5a.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/500.6a96ed5a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/btn-to-main.49889140.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/btn-to-main.72950aa9.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/change-data.be251f52.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/change-data.be251f52.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/change-data.ec6538e2.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/change-data.ec6538e2.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/change-data.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/change-password.564628c1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/change-password.564628c1.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/change-password.ec6538e2.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/change-password.ec6538e2.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/change-password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/chat.869ec2f3.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/chat.869ec2f3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/chat.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/enter-form.1e881969.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/enter-form.1e881969.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/enter-form.b960811b.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/enter-form.b960811b.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/enter-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/login.1e881969.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/login.1e881969.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/login.68b33d8e.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/login.68b33d8e.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/login.79dcaa6b.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/login.79dcaa6b.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/login.7e017dfb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/login.7e017dfb.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/login.95e1126a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/login.95e1126a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/messenger.00f4dfc7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/messenger.00f4dfc7.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/messenger.59712999.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/messenger.59712999.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/404/404.3a53a574.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/404/404.3a53a574.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/404/404.e88c2fe5.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/404/404.e88c2fe5.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/404/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/500/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/change-data/change-data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/change-password/change-password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/chat/chat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/login/login.1e881969.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/login/login.1e881969.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/login/login.68b33d8e.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/login/login.68b33d8e.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/login/login.79dcaa6b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/login/login.79dcaa6b.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/login/login.95e1126a.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/login/login.95e1126a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/login/login.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/login/login.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/profile/profile.9b64cf0c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/profile/profile.9b64cf0c.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/profile/profile.ec6538e2.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/profile/profile.ec6538e2.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/profile/profile.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/registration/registration.314368a2.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/registration/registration.314368a2.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/registration/registration.727efe6d.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/registration/registration.727efe6d.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/registration/registration.87cf16b4.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/registration/registration.87cf16b4.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/registration/registration.c46cec96.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/pages/registration/registration.c46cec96.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/registration/registration.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/profile-icon.0b9cd2ef.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/profile-icon.b1a7837d.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/profile.a61d54ae.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/profile.a61d54ae.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/profile.ec6538e2.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/profile.ec6538e2.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/registration.8237be7a.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/registration.8237be7a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/registration.87cf16b4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/registration.87cf16b4.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/registration.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/up_/change-data/change-data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/up_/change-password/change-password.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/up_/login/login.1e881969.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/up_/login/login.1e881969.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/up_/login/login.95e1126a.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/up_/login/login.95e1126a.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/up_/login/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/up_/profile/profile.ec6538e2.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/up_/profile/profile.ec6538e2.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/up_/profile/profile.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/up_/registration/registration.727efe6d.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/up_/registration/registration.727efe6d.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/up_/registration/registration.87cf16b4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/up_/registration/registration.87cf16b4.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/up_/registration/registration.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/handlebars.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/btn.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/change-info.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/info.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/input.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/link.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/overlay.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile-layout.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/enter-form.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404/404.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404/404.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/500/500.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/change-data/change-data.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/change-password/change-password.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/chat/chat.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/login/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/login.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/profile.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/profile/profile.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/profile/profile.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/registration/registration.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registration/registration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/btn-to-main.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/profile-icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/FormValidation.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter/Inter-VariableFont_slnt,wght.ttf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter/OFL.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter/README.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter/static/Inter-Black.ttf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter/static/Inter-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter/static/Inter-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter/static/Inter-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter/static/Inter-Light.ttf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter/static/Inter-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter/static/Inter-Regular.ttf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter/static/Inter-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter/static/Inter-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/normalize.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_COMMON_BRANCH" value="main" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="26CW4ZTqE4udXEPBr3tM2yyCHKs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.16.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.18.12" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/layout" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/vendor" />
+      <recent name="$PROJECT_DIR$/vendor/fonts" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0232ced8-0cd3-4b25-9a06-e9c630847e0f" name="Changes" comment="" />
+      <created>1646927857912</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646927857912</updated>
+      <workItem from="1646927859219" duration="71635000" />
+      <workItem from="1647705745086" duration="8916000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
