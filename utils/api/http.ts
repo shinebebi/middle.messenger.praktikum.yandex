@@ -1,4 +1,5 @@
-export enum METHODS {
+import { queryStringify } from '../queryStringify'
+export enum Methods {
     GET ='GET',
     POST = 'POST',
     PUT = 'PUT',
@@ -7,37 +8,27 @@ export enum METHODS {
 
 
 type TOptions = {
-    method?: METHODS;
+    method?: Methods;
     timeout?: number;
     data?: any;
     headers?: any
 };
 
-function queryStringify(data) {
-    if (typeof data !== 'object') {
-        throw new Error('Data must be object');
-    }
-    const keys = Object.keys(data);
-    return keys.reduce((result, key, index) => {
-        return `${result}${key}=${data[key]}${index < keys.length - 1 ? '&' : ''}`;
-    }, '?');
-}
-
 class HTTPTransport {
     get = (url: string, options: TOptions = {}) => {
-        return this.request(url, {...options, method: METHODS.GET}, options.timeout);
+        return this.request(url, {...options, method: Methods.GET}, options.timeout);
     };
 
     post = (url: string, options: TOptions = {}) => {
-        return this.request(url, {...options, method: METHODS.POST}, options.timeout);
+        return this.request(url, {...options, method: Methods.POST}, options.timeout);
     };
 
     put = (url: string, options: TOptions = {}) => {
-        return this.request(url, {...options, method: METHODS.PUT}, options.timeout);
+        return this.request(url, {...options, method: Methods.PUT}, options.timeout);
     };
 
     delete = (url: string, options: TOptions = {}) => {
-        return this.request(url, {...options, method: METHODS.DELETE}, options.timeout);
+        return this.request(url, {...options, method: Methods.DELETE}, options.timeout);
     };
 
     private request = (url: string, options : TOptions = {}, timeout = 5000) => {
@@ -50,7 +41,7 @@ class HTTPTransport {
             }
 
             const xhr = new XMLHttpRequest();
-            const isGet = method === METHODS.GET;
+            const isGet = method === Methods.GET;
 
             xhr.open(
                 method,

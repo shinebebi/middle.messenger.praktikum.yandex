@@ -1,8 +1,4 @@
 import Block from '../../../utils/Block'
-import Info from '../../components/Info/info'
-// @ts-ignore
-import {styles} from './profile.css'
-const style = styles
 
 export default class ProfilePage extends Block {
     constructor() {

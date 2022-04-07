@@ -1,10 +1,4 @@
-import Block from '../../../utils/Block'
-import ChangeInfo from '../../components/Change-info/change-info'
-import Button from '../../components/Button/button'
-// @ts-ignore
-import {styles} from '../profile/profile.css'
-const style = styles
-// @ts-ignore
+import Block from '../../../utils/Block';
 export default class ChangeDataPage extends Block {
     constructor() {
         super();

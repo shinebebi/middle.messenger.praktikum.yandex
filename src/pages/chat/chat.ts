@@ -1,9 +1,4 @@
 import Block from '../../../utils/Block'
-import ChatBox from '../../components/ChatBox/chat-box'
-// @ts-ignore
-import {styles} from './chat.css'
-const style = styles
-// @ts-ignore
 export default class ChatPage extends Block {
     constructor() {
         super();

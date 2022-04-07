@@ -18,11 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     renderDOM('#app', loginPage)
     const formLogin: any = document.querySelector('.main');
     const btn = formLogin.querySelector('.submit')
-    const loginInput = formLogin.querySelector('.login');
-    const passwordInput = formLogin.querySelector('.password');
-    loginInput.setAttribute('minlength', 3)
-    loginInput.setAttribute('maxlength', 20)
     const loginValidator = new FormValidator(validationConfig, formLogin);
+    loginValidator.enableValidation()
     let inputsObject = {}
     const inputs = formLogin.querySelectorAll('.input')
     btn.addEventListener('click', evt => {
@@ -34,6 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         console.log(inputsObject)
     });
-    loginValidator.enableValidation()
 })
 export {validationConfig}

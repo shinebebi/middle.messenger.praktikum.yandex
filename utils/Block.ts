@@ -57,7 +57,7 @@ export default class Block {
         return {props, children}
     }
 
-    _registerEvents(eventBus: EventBus) {
+    private _registerEvents(eventBus: EventBus) {
         eventBus.on(Block.EVENTS.INIT, this.init.bind(this));
         eventBus.on(Block.EVENTS.FLOW_CDM, this._componentDidMount.bind(this));
         eventBus.on(Block.EVENTS.FLOW_CDU, this._componentDidUpdate.bind(this));
@@ -69,7 +69,7 @@ export default class Block {
         this.eventBus().emit(Block.EVENTS.FLOW_CDM);
     }
 
-    _componentDidMount() {
+    private _componentDidMount() {
         this.componentDidMount();
         this.eventBus().emit(Block.EVENTS.FLOW_RENDER);
     }
@@ -78,7 +78,7 @@ export default class Block {
 
     }
 
-    _componentDidUpdate(oldProps: any, newProps: any) {
+    private _componentDidUpdate(oldProps: any, newProps: any) {
         const response = this.componentDidUpdate(oldProps, newProps);
         if (!response) {
             return;
@@ -102,7 +102,7 @@ export default class Block {
         return this._element;
     }
 
-    _render() {
+    private _render() {
         const templateString = this.render();
         const fragment = this.compile(templateString, {...this.props})
         const newElement = fragment.firstElementChild as HTMLElement;
@@ -122,7 +122,7 @@ export default class Block {
         return this.element;
     }
 
-    _makePropsProxy(props: any) {
+    private _makePropsProxy(props: any) {
         const self = this;
         return new Proxy(props as unknown as object, {
             get(target: Record<string, unknown>, prop: string) {
@@ -141,7 +141,7 @@ export default class Block {
         });
     }
 
-    _addEvents() {
+    private _addEvents() {
         const events: Record<string, () => void> = (this.props as any).events;
         if (!events) {
             return
@@ -151,7 +151,7 @@ export default class Block {
         });
     }
 
-    _removeEvents() {
+    private _removeEvents() {
         const events: Record<string, () => void> = (this.props as any).events;
         if (!events || !this._element) {
             return;
@@ -161,7 +161,7 @@ export default class Block {
         });
     }
 
-    _createDocumentElement(tagName: string): HTMLElement {
+    private _createDocumentElement(tagName: string): HTMLElement {
         return document.createElement(tagName);
     }
 

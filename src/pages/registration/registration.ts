@@ -1,9 +1,4 @@
 import Block from '../../../utils/Block'
-import Button from '../../components/Button/button'
-import Input from '../../components/Input/input'
-// @ts-ignore
-import {styles} from './registration.css'
-const style = styles
 
 export default class RegistrationPage extends Block {
     constructor() {
@@ -16,12 +11,12 @@ export default class RegistrationPage extends Block {
                 <form class="main" novalidate>
                     <h1 class="header">Регистрация</h1>
                     <div class="inputs_container">
-                        {{{Input name="email"}}}
-                        {{{Input name="login"}}}
+                        {{{Input name="email" type="email"}}}
+                        {{{Input name="login" minlength="3" maxlength="20"}}}
                         {{{Input name="name"}}}
                         {{{Input name="surname"}}}
-                        {{{Input name="telephone"}}}
-                        {{{Input name="password"}}}
+                        {{{Input name="telephone" minlength="10" maxlength="15" type="number"}}}
+                        {{{Input name="password" minlength="8" maxlength="40" type="password"}}}
                     </div>
                     <div class="btn_container">
                         {{{Button text="Sign Up"}}}

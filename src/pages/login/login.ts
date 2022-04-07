@@ -1,25 +1,20 @@
 import Block from '../../../utils/Block'
-import Button from '../../components/Button/button'
-import Input from '../../components/Input/input'
-// @ts-ignore
-import {styles} from './login.css'
-const style = styles
 export default class LoginPage extends Block {
     constructor() {
-        super({ onClick: () => console.log('fuck') });
+        super();
     }
-    render() {
+        render() {
         //language=hbs
         return `
             <section class="overlay">
                 <form class="main" novalidate>
                     <h1 class="header">Вход</h1>
                     <div class="inputs_container">
-                        {{{Input name="login"}}}
-                        {{{Input name="password"}}}
+                        {{{Input name="login" minlength="3" maxlength="20"}}}
+                        {{{Input name="password" minlength="8" maxlength="40" type="password"}}}
                     </div>
                     <div class="btn_container">
-                        {{{Button text="Sign In" onClick=onClick}}}
+                        {{{Button text="Sign In"}}}
                         <button class="btn_sign-up">
                             <a href="../registration/registration.html" class="link">Sign Up</a>
                         </button>
