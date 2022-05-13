@@ -1,28 +1,29 @@
 import Block from '../../../utils/Block';
 
-interface IButtonProps {
-    text: string;
+interface ISendButtonProps {
     onClick?: () => void
 }
 
-export default class Button extends Block {
-    constructor(props: IButtonProps) {
+export default class SendButton extends Block {
+    constructor(props: ISendButtonProps) {
         const {
-            onClick, text
+            onClick,
         } = props;
 
         super({
-            text,
             events: {
                 click: onClick,
             },
+
         });
     }
 
     render() {
         // language=hbs
         return `
-            <button class="btn_auth_form submit" type="submit">{{text}}</button>
+            <button type="button" class="send-button">
+                <div class="send-img"></div>
+            </button>
         `
     }
 }

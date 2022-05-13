@@ -110,3 +110,7 @@
     text-underline: none;
     color: #FF0000;
 }
+.avatar_input {
+    width: 225px;
+    height: 21px;
+}

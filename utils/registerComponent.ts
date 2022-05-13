@@ -1,19 +1,31 @@
 import Block from './Block';
 // @ts-ignore
-import  { HelperOptions } from 'handlebars';
+import Handlebars, { HelperOptions } from 'handlebars';
 
-// @ts-ignore
-import Handlebars from 'handlebars'
+interface BlockConstructable<Props = any> {
+    new(props: Props): Block;
+}
 
-
-export function registerComponent(Component: typeof Block) {
-    Handlebars.registerHelper(Component.name, function ({ hash, data }: HelperOptions) {
+export function registerComponent<Props = any>(Component: BlockConstructable) {
+    Handlebars.registerHelper(Component.name, function ({ hash: { ref, ...hash }, data }: HelperOptions) {
         if (!data.root.children) {
             data.root.children = {};
         }
-        const { children } = data.root;
+
+        if (!data.root.refs) {
+            data.root.refs = {};
+        }
+
+        const { children, refs } = data.root;
+
         const component = new Component(hash);
+
         children[component.id] = component;
+
+        if (ref) {
+            refs[ref] = component.getContent();
+        }
+
         return `<div data-id="id-${component.id}"></div>`;
     })
 }

@@ -1,11 +1,7 @@
-import { renderDOM } from '../../../utils/renderDOM'
-import ChangeDataPage from './change-data'
-import ChangeInfo from '../../components/Change-info/change-info'
-import Button from '../../components/Button/button'
-import {registerComponent} from '../../../utils/registerComponent'
-document.addEventListener('DOMContentLoaded', () => {
-    registerComponent(ChangeInfo)
-    registerComponent(Button)
-    const changeDataPage = new ChangeDataPage()
-    renderDOM('#app', changeDataPage)
-})
+import ChangeDataPage from "./change-data";
+import {withRouter} from "../../../utils/Router";
+import {connect} from "../../../utils/store";
+
+export default withRouter(connect((state: any) => ({
+    user: state.user.profile
+}), ChangeDataPage));

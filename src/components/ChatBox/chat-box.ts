@@ -1,20 +1,30 @@
 import Block from '../../../utils/Block';
+import {store} from "../../../utils/store";
+import {chooseChat} from "../../../utils/store/chats";
+import MessengerController from "../../../utils/controllers/MessengerController";
+import {TChat} from "../../../utils/api/chat-api";
+import {connectToChat} from "../../../utils/controllers/SocketController";
 
 interface IChatBox {
-    name: string,
-    message: string,
-    time: string,
-    unread: string
+    info: TChat
 }
 
 
 export default class ChatBox extends Block {
-    constructor({name, message, unread, time}: IChatBox) {
+    constructor({info}: IChatBox) {
+        async function onClick(e) {
+            e.preventDefault()
+            const list = await MessengerController.fetchChats()
+            const members = await MessengerController.fetchMembers(info.id)
+            store.dispatch(chooseChat(info, list, members))
+            await connectToChat(info.id, store.state.user.profile.id)
+        }
+
         super({
-            name,
-            message,
-            unread,
-            time
+            info,
+            events: {
+                click: onClick,
+            }
         });
     }
 
@@ -23,12 +33,12 @@ export default class ChatBox extends Block {
         return `
             <div class="chat-box">
                 <div class="img-box">
-                    <img src="http://localhost:3000/pages/profile/../../profile-icon.0b9cd2ef.jpg?1649101664642" class="profile-icon"/>
+                    <img src="" class="profile-icon"/>
                 </div>
-                <h2 class="name">{{name}}</h2>
-                <p class="message">{{message}}</p>
-                <p class="time">{{time}}</p>
-                <div class="unread">{{unread}}</div>
+                <h2 class="name">{{info.title}}</h2>
+                <p class="message">{{info.last_message.content}}</p>
+                <p class="time"></p>
+                <div class="unread">{{info.unread_count}}</div>
             </div>
         `
     }

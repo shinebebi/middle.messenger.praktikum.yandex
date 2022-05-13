@@ -1,4 +1,3 @@
-import { queryStringify } from '../queryStringify'
 export enum Methods {
     GET ='GET',
     POST = 'POST',
@@ -8,67 +7,90 @@ export enum Methods {
 
 
 type TOptions = {
-    method?: Methods;
+    method: Methods;
     timeout?: number;
     data?: any;
     headers?: any
 };
 
-class HTTPTransport {
-    get = (url: string, options: TOptions = {}) => {
-        return this.request(url, {...options, method: Methods.GET}, options.timeout);
-    };
+export default class HTTPTransport {
+    static API_URL = 'https://ya-praktikum.tech/api/v2';
+    protected endpoint: string;
 
-    post = (url: string, options: TOptions = {}) => {
-        return this.request(url, {...options, method: Methods.POST}, options.timeout);
-    };
+    constructor(endpoint: string) {
+        this.endpoint = `${HTTPTransport.API_URL}${endpoint}`;
+    }
 
-    put = (url: string, options: TOptions = {}) => {
-        return this.request(url, {...options, method: Methods.PUT}, options.timeout);
-    };
+    public get<Response>(path = '/'): Promise<Response> {
+        return this.request<Response>(this.endpoint + path);
+    }
 
-    delete = (url: string, options: TOptions = {}) => {
-        return this.request(url, {...options, method: Methods.DELETE}, options.timeout);
-    };
+    public post<Response = void>(path: string, data?: unknown): Promise<Response> {
+        return this.request<Response>(this.endpoint + path, {
+            method: Methods.POST,
+            data,
+        });
+    }
 
-    private request = (url: string, options : TOptions = {}, timeout = 5000) => {
-        const {headers = {}, method, data} = options;
+    public put<Response = void>(path: string, data: unknown): Promise<Response> {
+        return this.request<Response>(this.endpoint + path, {
+            method: Methods.PUT,
+            data,
+        });
+    }
 
-        return new Promise(function(resolve, reject) {
-            if (!method) {
-                reject('No method');
-                return;
-            }
+    /*public patch<Response = void>(path: string, data: unknown): Promise<Response> {
+        return this.request<Response>(this.endpoint + path, {
+            method: Methods.P,
+            data,
+        });
+    }*/
 
+    public delete<Response>(path: string, data: unknown): Promise<Response> {
+        return this.request<Response>(this.endpoint + path, {
+            method: Methods.DELETE,
+            data
+        });
+    }
+
+    private request<Response>(url: string, options: TOptions = {method: Methods.GET}): Promise<Response> {
+        const {method, data} = options;
+
+        return new Promise((resolve, reject) => {
             const xhr = new XMLHttpRequest();
-            const isGet = method === Methods.GET;
+            xhr.open(method, url);
 
-            xhr.open(
-                method,
-                isGet && !!data
-                    ? `${url}${queryStringify(data)}`
-                    : url,
-            );
+            xhr.onreadystatechange = (e) => {
 
-            Object.keys(headers).forEach(key => {
-                xhr.setRequestHeader(key, headers[key]);
-            });
-
-            xhr.onload = function() {
-                resolve(xhr);
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status < 400) {
+                        resolve(xhr.response);
+                    } else {
+                        reject(xhr.response);
+                    }
+                }
             };
 
-            xhr.onabort = reject;
-            xhr.onerror = reject;
+            xhr.onabort = () => reject({reason: 'abort'});
+            xhr.onerror = () => reject({reason: 'network error'});
+            xhr.ontimeout = () => reject({reason: 'timeout'});
 
-            xhr.timeout = timeout;
-            xhr.ontimeout = reject;
+            xhr.setRequestHeader('Content-Type', 'application/json');
 
-            if (isGet || !data) {
+            xhr.withCredentials = true;
+            xhr.responseType = 'json';
+
+            if (method === Methods.GET || !data) {
                 xhr.send();
             } else {
-                xhr.send(data);
+                if (data.body instanceof FormData) {
+                    console.log(data)
+                    xhr.send(data as unknown as FormData)
+                }
+                else {
+                    xhr.send(JSON.stringify(data))
+                };
             }
         });
-    };
+    }
 }

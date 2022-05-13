@@ -1,9 +1,7 @@
-import { renderDOM } from '../../../utils/renderDOM'
 import ProfilePage from '../profile/profile'
-import Info from "../../components/Info/info"
-import {registerComponent} from '../../../utils/registerComponent'
-document.addEventListener('DOMContentLoaded', () => {
-    registerComponent(Info)
-    const profilePage = new ProfilePage()
-    renderDOM('#app', profilePage)
-})
+import {withRouter} from "../../../utils/Router";
+import {connect} from "../../../utils/store";
+
+export default withRouter(connect((state: any) => ({
+    user: state.user.profile
+}), ProfilePage));
