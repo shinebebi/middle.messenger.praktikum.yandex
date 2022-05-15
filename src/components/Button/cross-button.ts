@@ -15,9 +15,8 @@ export default class CrossButton extends Block {
             onClick, text, info, chatId
         } = props;
         async function deleteUser() {
-            const a = document.getElementById(info.id)
-            // @ts-ignore
-            a.remove()
+            const userName = document.getElementById(info.id)
+            userName?.remove()
             await MessengerController.deleteUser({users: [info.id], chatId: store.state.chats.currentChat.id})
         }
         super({

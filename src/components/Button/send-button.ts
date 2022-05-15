@@ -1,16 +1,18 @@
 import Block from '../../../utils/Block';
 
 interface ISendButtonProps {
-    onClick?: () => void
+    onClick?: () => void;
+    goToProfile?: string;
 }
 
 export default class SendButton extends Block {
     constructor(props: ISendButtonProps) {
         const {
-            onClick,
+            onClick, goToProfile
         } = props;
 
         super({
+            goToProfile,
             events: {
                 click: onClick,
             },
@@ -21,7 +23,7 @@ export default class SendButton extends Block {
     render() {
         // language=hbs
         return `
-            <button type="button" class="send-button">
+            <button type="button" class="send-button {{goToProfile}}">
                 <div class="send-img"></div>
             </button>
         `

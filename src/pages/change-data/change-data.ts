@@ -1,6 +1,9 @@
 import Block from '../../../utils/Block';
 import AuthController from "../../../utils/controllers/AuthController";
 import {router} from "../../index";
+import {FormValidator} from "../../../utils/FormValidation";
+import {validationConfig} from "../login";
+
 export default class ChangeDataPage extends Block {
     protected getStateFromProps() {
         this.state = {
@@ -15,42 +18,35 @@ export default class ChangeDataPage extends Block {
 
                 await AuthController.changeUserData(data)
             },
+            goToProfile: () => {
+                router.go('/settings')
+            },
             ava: async (e) => {
                 e.preventDefault()
-                // @ts-ignore
-                const myUserForm = document.getElementById('ava-form')
+                const myUserForm: any = document.getElementById('ava-form')
                 // @ts-ignore
                 const avatar = document.querySelector('.avatar_input').files[0]
-                // @ts-ignore
                 const form = new FormData(myUserForm);
                 form.append('avatar', avatar);
-                console.log(form.get(avatar))
-                fetch(`https://ya-praktikum.tech/api/v2/user/profile/avatar`, {
-                    method: 'PUT',
-                    credentials: 'include', // Нам нужно подставлять cookies
-                    mode: 'cors', // Работаем с CORS
-                    body: form,
-                })
-                    .then(() => AuthController.fetchUser());
-                /*e.preventDefault()
-                // @ts-ignore
-                const avatar = document.querySelector('.avatar_input').files[0]
-                await AuthController.changeAvatarData(avatar)*/
+                await AuthController.changeAvatarData(form)
+                    .then(() => AuthController.fetchUser())
             }
         };
 
     }
+
     componentDidMount() {
-        console.log(this.props.user.avatar)
+        const formProfile: any = document.querySelector('.info-container');
+        const loginValidator = new FormValidator(validationConfig, formProfile);
+        loginValidator.enableValidation()
     }
+
     render() {
         //language=hbs
         return `
             <section class="main">
                 <div class="nav-btn__container">
-                    <button class="nav-btn">
-                        <img src="" class="nav-btn__img"/>
-                    </button>
+                    {{{SendButton goToProfile="go-message" onClick=goToProfile}}}
                 </div>
                 <div class="profile__container">
                     <div class="main-info__container">
@@ -61,13 +57,13 @@ export default class ChangeDataPage extends Block {
                         </form>
                         <h2 class="name">{{user.display_name}}</h2>
                     </div>
-                    <form class="info-container">
-                        {{{ChangeInfo title="Почта" value=user.email ref="email"}}}
-                        {{{ChangeInfo title="Логин" value=user.login ref="login"}}}
-                        {{{ChangeInfo title="Имя" value=user.first_name ref="first_name"}}}
-                        {{{ChangeInfo title="Фамилия" value=user.second_name ref="second_name"}}}
+                    <form class="info-container" novalidate>
+                        {{{ChangeInfo title="Почта" value=user.email ref="email" name="email" type="email"}}}
+                        {{{ChangeInfo title="Логин" value=user.login ref="login" name="login" minlength="3" maxlength="20"}}}
+                        {{{ChangeInfo title="Имя" name="name" value=user.first_name ref="first_name"}}}
+                        {{{ChangeInfo title="Фамилия"  name="surname" value=user.second_name ref="second_name"}}}
                         {{{ChangeInfo title="Имя в чате" value=user.display_name ref="display_name"}}}
-                        {{{ChangeInfo title="Телефон" value=user.phone ref="phone"}}}
+                        {{{ChangeInfo title="Телефон" name="telephone" minlength="10" maxlength="15" type="number" value=user.phone ref="phone"}}}
                         {{{Button text="Save" onClick=onChange}}}
                     </form>
                 </div>

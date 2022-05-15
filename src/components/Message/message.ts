@@ -7,13 +7,9 @@ export interface IMessageProps {
 
 export default class Message extends Block {
     constructor({content}: IMessageProps) {
-        function fnc() {
-            return store.state.user.profile.id === content.userId;
-        }
-
         super({
             content,
-            style: fnc() && 'main-user'
+            style: store.state.user.profile.id === content.userId && 'main-user'
         });
     }
 

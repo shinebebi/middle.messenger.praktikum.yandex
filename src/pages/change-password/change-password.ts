@@ -1,5 +1,6 @@
 import Block from '../../../utils/Block'
 import AuthController from "../../../utils/controllers/AuthController";
+import {router} from "../../index";
 export default class ChangePasswordPage extends Block {
     protected getStateFromProps() {
         this.state = {
@@ -13,6 +14,9 @@ export default class ChangePasswordPage extends Block {
                 });
 
                 await AuthController.changePassword(data)
+            },
+            goToProfile: () => {
+                router.go('/settings')
             }
         };
     }
@@ -21,9 +25,7 @@ export default class ChangePasswordPage extends Block {
         return `
             <section class="main">
                 <div class="nav-btn__container">
-                    <button class="nav-btn">
-                        <img src="" class="nav-btn__img"/>
-                    </button>
+                    {{{SendButton goToProfile="go-message" onClick=goToProfile}}}
                 </div>
                 <div class="profile__container">
                     <div class="main-info__container">

@@ -21,15 +21,12 @@ export default class Chatting extends Block {
         this.state = {
             toggleAddUserPopup: () => {
                 const popup = document.querySelector('.add-user_popup')
-                // @ts-ignore
-                popup.classList.toggle('switch_popup')
+                popup?.classList.toggle('switch_popup')
             },
             toggleMembersPopup: (e) => {
-                console.log('hi')
                 e.preventDefault()
                 const popup = document.querySelector('.members_popup')
-                // @ts-ignore
-                popup.classList.toggle('switch_popup')
+                popup?.classList.toggle('switch_popup')
             },
             addUser: async (e) => {
                 e.preventDefault()

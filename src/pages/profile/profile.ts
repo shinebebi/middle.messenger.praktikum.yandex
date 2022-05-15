@@ -15,6 +15,12 @@ export default class ProfilePage extends Block {
             goToChangeData: () => {
                 router.go('/change-data')
             },
+            goToChat: () => {
+                router.go('/messenger')
+            },
+            goToChangePassword: () => {
+                router.go('/change-password')
+            }
         }
     }
     componentDidMount() {
@@ -37,14 +43,12 @@ export default class ProfilePage extends Block {
         return `
             <section class="main">
                 <div class="nav-btn__container">
-                    <button class="nav-btn">
-                        <img src="../../../static/btn-to-main.png" class="nav-btn__img"/>
-                    </button>
+                    {{{SendButton goToProfile="go-message" onClick=goToChat}}}
                 </div>
                 <div class="profile__container">
                     <div class="main-info__container">
                         <img src="https://ya-praktikum.tech/api/v2/resources{{user.avatar}}" class="img"/>
-                        <h2 class="name">{{user.display_name}}</h2>
+                        <h2 class="name_profile">{{user.display_name}}</h2>
                     </div>
                     <div class="info-container">
                         {{{Info title="Почта" value=user.email}}}
@@ -56,7 +60,7 @@ export default class ProfilePage extends Block {
                     </div>
                     <div class="btn__container">
                         {{{Link text="Изменить данные" onClick=goToChangeData color="#3369F3" style="btn link"}}}
-                        {{{Link text="Изменить пароль" onClick=onLogout color="#3369F3" style="btn link"}}}
+                        {{{Link text="Изменить пароль" onClick=goToChangePassword color="#3369F3" style="btn link"}}}
                         {{{Link text="Выйти" onClick=onLogout color="#red" style="btn link"}}}
                     </div>
                 </div>

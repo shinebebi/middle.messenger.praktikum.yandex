@@ -7,8 +7,7 @@ export default class ChatPage extends Block {
     protected getStateFromProps() {
         this.state = {
             toggleAddPopup: () => {
-                const popup = document.querySelector('.add_popup')
-                // @ts-ignore
+                const popup: any = document.querySelector('.add_popup')
                 popup.classList.toggle('switch_popup')
             },
             goToProfile: () => {
@@ -16,9 +15,9 @@ export default class ChatPage extends Block {
             },
             addChat: async (e) => {
                 e.preventDefault()
-                // @ts-ignore
-                const titleInput = document.querySelector('.title').value
-                await MessengerController.addChat({title: titleInput}).then(() => {
+                const titleInput: any = document.querySelector('.title')
+                const titleInputValue = titleInput.value
+                await MessengerController.addChat({title: titleInputValue}).then(() => {
                     this.state.toggleAddPopup()
                     MessengerController.fetchChats()
                 })
@@ -26,10 +25,6 @@ export default class ChatPage extends Block {
             },
         }
     }
-    /*componentDidUpdate() {
-        console.log(this.props.messages)
-        return true
-    }*/
 
     render() {
         //language=hbs

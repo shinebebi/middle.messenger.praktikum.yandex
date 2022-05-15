@@ -19,16 +19,16 @@
 .feed {
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #EAEAEA;
+    border-right: 1px solid var(--border-color);
     width: 310px;
 }
 .chat_link {
     border: none;
-    background-color: white;
+    background-color: var(--default-color);
     width: auto;
     text-align: end;
     margin-right: 10px;
-    color: #999999;
+    color: var(--placeholder-text);
     margin-top: 21px;
     text-decoration: none;
 }
@@ -40,7 +40,7 @@
     border-radius: 5px;
     width: 290px;
     height: 32px;
-    color: #999999;
+    color: var(--placeholder-text);
     border: none;
 }
 
@@ -56,7 +56,7 @@
 
 .chat-box {
     display: grid;
-    border-top: 1px solid #EAEAEA;
+    border-top: 1px solid var(--border-color);
     grid-template-columns: 47px 193px 25px;
     grid-column-gap: 10px;
     grid-template-rows: 13px 15px 20px;
@@ -85,21 +85,21 @@
 .message {
     line-height: 15px;
     grid-row: 2 / 3;
-    color: #999999;
+    color: var(--placeholder-text);
 }
 
 .time {
     font-size: 9px;
     line-height: 13px;
     grid-row: 1 / 2;
-    color: #999999;
+    color: var(--placeholder-text);
 }
 
 .unread {
     background: #3369F3;
     width: 20px;
     border-radius: 100px;
-    color: #FFFFFF;
+    color: var(--default-color);
     font-size: 11px;
     text-align: center;
     padding-top: 4px;
@@ -113,7 +113,7 @@
     height: auto;
 }
 .chat_header {
-    border-bottom: 1px solid #EAEAEA;
+    border-bottom: 1px solid var(--border-color);
     width: 90%;
     margin: 0 auto 0 auto;
     display: flex;
@@ -126,7 +126,7 @@
     height: 40px;
 }
 .choose-chat-text {
-    color: #999999;
+    color: var(--placeholder-text);
     width: 257px;
     height: 30px;
     margin: auto;
@@ -154,13 +154,13 @@
     width: 350px;
     margin-top: 300px;
     z-index: 10;
-    background-color: white;
+    background-color: var(--default-color);
     gap: 20px;
     padding-bottom: 20px;
 }
 .cross-btn {
     border: none;
-    background-color: white;
+    background-color: var(--default-color);
     border-radius: 100px;
     transform: rotate(45deg);
 }
@@ -179,7 +179,7 @@
     flex-direction: row;
     gap: 10px;
     width: 90%;
-    border-top: 1px solid #EAEAEA;
+    border-top: 1px solid var(--border-color);
     margin: 0 auto 0 auto;
     height: 50px;
     align-items: center;
@@ -196,7 +196,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    background-color: #F8F8F8;
+    background-color: var(--others-message);
     max-width: 400px;
     height: auto;
     width: fit-content;
@@ -207,7 +207,7 @@
 
 }
 .main-user {
-    background-color: #E4EDFD;
+    background-color: var(--user-message);
     margin-left: auto;
     margin-right: 30px;
 }
@@ -229,5 +229,5 @@
 }
 .send-button {
     border: none;
-    background-color: white;
+    background-color: var(--default-color);
 }

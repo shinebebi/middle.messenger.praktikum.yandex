@@ -1,3 +1,10 @@
+:root {
+    --border-color: #EAEAEA;
+    --default-color: white;
+    --others-message: #F8F8F8;
+    --user-message: #E4EDFD;
+    --placeholder-text: #999999;
+}
 .main {
     display: flex;
     flex-direction: row;
@@ -8,8 +15,8 @@
     width: 64px;
     height: auto;
     display: flex;
-    background-color: #FBFBFB;
-    border-right: #EAEAEA;
+    background-color: var(--border-color);
+    border-right: var(--border-color);
 }
 
 .nav-btn__img {
@@ -49,7 +56,7 @@
     border-radius: 100px;
 }
 
-.name {
+.name_profile {
     font-weight: 600;
     font-size: 16px;
     line-height: 16px;
@@ -68,7 +75,7 @@
     width: 510px;
     font-size: 13px;
     line-height: 13px;
-    border-bottom: 1px solid #EAEAEA;
+    border-bottom: 1px solid var(--border-color);
     justify-content: space-between;
 }
 
@@ -77,8 +84,8 @@
 }
 
 .person-info {
-    color: #999999;
-    background-color: white;
+    color: var(--placeholder-text);
+    background-color: var(--default-color);
     height: 13px;
     border: none;
     margin: auto 0;
@@ -92,9 +99,9 @@
 }
 .btn {
     border: none;
-    border-bottom: 1px solid #EAEAEA;
+    border-bottom: 1px solid var(--border-color);
     text-align: start;
-    background-color: white;
+    background-color: var(--default-color);
 }
 
 .btn_auth {
@@ -102,7 +109,7 @@
     height: 37px;
     border: none;
     border-radius: 8px;
-    color: white;
+    color: var(--default-color);
     background-color: #3369F3;
 }
 .link {
@@ -113,4 +120,12 @@
 .avatar_input {
     width: 225px;
     height: 21px;
+}
+.go-message {
+    transform: rotate(180deg);
+}
+.input-and-error_block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
 }

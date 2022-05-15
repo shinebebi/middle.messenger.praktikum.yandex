@@ -60,14 +60,10 @@ class AuthController {
             store.dispatch(setError(e as { reason: string }));
         }
     }
-    async changeAvatarData(data: File) {
+    async changeAvatarData(data: any) {
         try {
-            const formData = new FormData();
-            console.log(data)
-            formData.append("avatar", data);
-            console.log(formData.get('avatar'))
-            await this.userApi.changeAvatar(formData)
-            //await this.fetchUser();
+            await this.userApi.changeAvatar(data)
+            await this.fetchUser();
         } catch (e) {
             store.dispatch(setError(e as { reason: string }));
         }

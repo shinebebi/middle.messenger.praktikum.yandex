@@ -39,14 +39,14 @@
     height: 37px;
     border: none;
     border-radius: 8px;
-    color: white;
+    color: var(--default-color);
     background-color: #3369F3;
 }
 
 .btn_sign-up_form {
     color: #3369F3;
     border: none;
-    background-color: white;
+    background-color: var(--default-color);
     margin-bottom: 30px;
 }
 .input_container_form {
@@ -56,7 +56,7 @@
 }
 
 .field-name_form {
-    color: #999999;
+    color: var(--placeholder-text);
     font-size: 9px;
     line-height: 9px;
     text-align: start;
@@ -77,7 +77,7 @@
     text-decoration: none;
     text-underline: none;
     border: none;
-    background-color: white;
+    background-color: var(--default-color);
     margin-bottom: 15px;
     color: #3369F3;
 }

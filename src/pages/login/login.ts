@@ -16,7 +16,6 @@ export default class LoginPage extends Block {
                     // @ts-ignore
                     data[key] = input.querySelector('.input_form').value;
                 });
-                //console.log(data)
 
                 await AuthController.login(data)
                     .then(() => {
