@@ -4,7 +4,6 @@ const PORT = 3000
 
 const app = express()
 const path = require('path')
-const helmet = require('helmet');
 
 app.listen(PORT, function () {
     console.log(`Example app listening on port ${PORT}!`)
