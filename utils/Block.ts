@@ -1,7 +1,6 @@
 import EventBus from './EventBus'
 import {v4 as makeUUID} from 'uuid';
-// @ts-ignore
-import Handlebars from 'handlebars'
+import * as Handlebars from 'handlebars'
 interface BlockMeta<P = any> {
     props: P;
 }

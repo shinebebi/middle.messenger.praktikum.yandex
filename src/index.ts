@@ -1,5 +1,4 @@
-// @ts-ignore
-import {registerComponent} from '../utils/registerComponent';
+import registerComponent from '../utils/registerComponent';
 import Router from '../utils/Router';
 import ChatPage from './pages/chat';
 import LoginPage from './pages/login/login';
@@ -19,6 +18,8 @@ import CrossButton from "./components/Button/cross-button";
 import Chatting from "./components/Chatting/chatting";
 import Message from "./components/Message/message";
 import SendButton from "./components/Button/send-button";
+// @ts-ignore
+import * as components from "./components";
 
 
 registerComponent(Button)
@@ -31,16 +32,19 @@ registerComponent(CrossButton)
 registerComponent(Chatting)
 registerComponent(Message)
 registerComponent(SendButton)
+
 export const router = new Router();
-AuthController.fetchUser()
-    .then(() => MessengerController.fetchChats())
-    .then(() => {
-        router
-            .use('/messenger', ChatPage)
-            .use('/', LoginPage)
-            .use('/sign-up', RegistrationPage)
-            .use('/settings', ProfilePage)
-            .use('/change-data', ChangeDataPage)
-            .use('/change-password', ChangePasswordPage)
-            .start();
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    AuthController.fetchUser()
+        .then(() => MessengerController.fetchChats())
+        .then(() => {
+            router
+                .use('/messenger', ChatPage)
+                .use('/', LoginPage)
+                .use('/sign-up', RegistrationPage)
+                .use('/settings', ProfilePage)
+                .use('/change-data', ChangeDataPage)
+                .use('/change-password', ChangePasswordPage)
+                .start();
+        });
+})
